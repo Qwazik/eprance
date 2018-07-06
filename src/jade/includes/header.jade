@@ -1,0 +1,29 @@
+header.main-header
+	.container
+		.row.justify-content-between.align-items-center
+			.col-auto.main-header__logo: a(href="/").main-logo
+				img(src="img/logo.png", alt="")
+			.col: nav.main-header__nav
+				ul.main-nav
+					li.main-nav__item
+						i.icm.icon-n-ico1
+						a.main-nav__link(href="#") О нас
+					li.main-nav__item
+						i.icm.icon-n-ico2
+						a.main-nav__link(href="#") Концепция
+					li.main-nav__item
+						i.icm.icon-n-ico3
+						a.main-nav__link(href="#") Наш парк
+					li.main-nav__item
+						i.icm.icon-n-ico4
+						a.main-nav__link(href="#") Почему мы
+					li.main-nav__item
+						i.icm.icon-n-ico5
+						a.main-nav__link(href="#") Контакты
+			.col-auto.main-header__contact-block: .contact-block
+				.contact-block__phone
+					span.icm.icon-phone
+						span.path1
+						span.path2
+					a(href="tel: +79031118010").contact-block__phone +7 (903) 111 80 10
+				a(href="#modalFeedback").fancybox.btn.btn--primary Перезвоните мне

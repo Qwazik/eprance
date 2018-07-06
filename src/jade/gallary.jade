@@ -1,0 +1,50 @@
+extends _template
+
+block main
+	.container
+		.inner-header(style="background-image: url('img/gallary-bg.jpg')")
+			.inner-header__title Галлерея
+			ul.breadcrumbs 
+				li.breadcrumbs__item: a(href="#") главная
+				li.breadcrumbs__item.active: a(href="#") наш парк
+		.gallary-container
+			.dt
+				.dtc: a(href="img/gallary/1.jpg" data-fancybox="gallary").fancybox: img(src="img/gallary/1.jpg", alt="").img-responsive
+				.dtc: a(href="img/gallary/2.jpg" data-fancybox="gallary").fancybox: img(src="img/gallary/2.jpg", alt="").img-responsive
+			.dt
+				.dtc: a(href="img/gallary/3.jpg" data-fancybox="gallary").fancybox: img(src="img/gallary/3.jpg", alt="").img-responsive
+				.dtc: a(href="img/gallary/4.jpg" data-fancybox="gallary").fancybox: img(src="img/gallary/4.jpg", alt="").img-responsive
+			.dt
+				.dtc: a(href="img/gallary/5.jpg" data-fancybox="gallary").fancybox: img(src="img/gallary/5.jpg", alt="").img-responsive
+				.dtc: a(href="img/gallary/6.jpg" data-fancybox="gallary").fancybox: img(src="img/gallary/6.jpg", alt="").img-responsive
+			.dt
+				.dtc: a(href="img/gallary/7.jpg" data-fancybox="gallary").fancybox: img(src="img/gallary/7.jpg", alt="").img-responsive
+				.dtc: a(href="img/gallary/8.jpg" data-fancybox="gallary").fancybox: img(src="img/gallary/8.jpg", alt="").img-responsive
+		.home-map#homeMap
+		.home-contacts
+			.row.align-items-center
+				.col-md.col-sm-12
+					.form
+						.text-section-header.ta-center
+							| Есть вопрос?
+							.text-section-header__desc Свяжитесь  с  нами
+						input(type="text" placeholder="Меня зовут...").form-el.form-el-input
+						input(type="text" placeholder="Мой E-mail...").form-el.form-el-input
+						input(type="submit" value="Подписаться на новости").form-el.form-el-submit
+						.form-el-agree.align-items-center
+							label.form-el-checkbox
+								input(type="checkbox" name="agree")
+								.form-el-checkbox__ico
+							.form-el-agree__text Я согласен(а) на обработку <a href="#">персональных данных</a>
+				.col-sm.col-12
+					.home-contacts__row
+						img(src="img/logo.png", alt="").home-contacts__logo
+					.home-contacts__row
+						p.home-contacts__title Адрес
+						p г. Москва, ул. Уличная Площадь, 45б,<br> 789878
+					.home-contacts__row
+						p.home-contacts__title Телефон
+						p +7 903 1118010
+					.home-contacts__row
+						p.home-contacts__title E-mail
+						p info@example.com

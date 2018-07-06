@@ -1,0 +1,33 @@
+extends _template
+
+block main
+	.container
+		.home-map#homeMap.mb-lg
+		.contacts-list
+			.contacts-list__row
+				-for(i=0;i<9;i++)
+					.contacts-list__item
+						.contact-item
+							.contact-item__name ТЦ Город
+							.contact-item__addr Рязанский пр-кт, 2К2
+							.contact-block__phone
+								span.icm.icon-phone
+									span.path1
+									span.path2
+								a(href="tel: +79031118010").contact-block__phone +7 (903) 111 80 10
+							a(href="#").btn.btn--primary Как проехать
+		.home-contacts
+			.row.align-items-center
+				.col-md.col-sm-12
+					.form
+						.text-section-header.ta-center
+							| Есть вопрос?
+							.text-section-header__desc Свяжитесь  с  нами
+						input(type="text" placeholder="Меня зовут...").form-el.form-el-input
+						input(type="text" placeholder="Мой E-mail...").form-el.form-el-input
+						input(type="submit" value="Подписаться на новости").form-el.form-el-submit
+						.form-el-agree.align-items-center
+							label.form-el-checkbox
+								input(type="checkbox" name="agree")
+								.form-el-checkbox__ico
+							.form-el-agree__text Я согласен(а) на обработку <a href="#">персональных данных</a>

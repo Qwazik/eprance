@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?686mih');
+  src:  url('../fonts/icomoon.eot?686mih#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?686mih') format('truetype'),
+    url('../fonts/icomoon.woff?686mih') format('woff'),
+    url('../fonts/icomoon.svg?686mih#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-vk:before {
+  content: "\e911";
+}
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-brand:before {
+  content: "\e900";
+}
+.icon-social:before {
+  content: "\e900";
+}
+.icon-twitter:before {
+  content: "\e901";
+}
+.icon-brand2:before {
+  content: "\e901";
+}
+.icon-tweet:before {
+  content: "\e901";
+}
+.icon-social2:before {
+  content: "\e901";
+}
+.icon-ar-right:before {
+  content: "\e912";
+}
+.icon-ar-left:before {
+  content: "\e913";
+}
+.icon-f-ico3:before {
+  content: "\e902";
+}
+.icon-f-ico4:before {
+  content: "\e903";
+}
+.icon-f-ico5:before {
+  content: "\e904";
+}
+.icon-f-ico6:before {
+  content: "\e905";
+}
+.icon-n-ico1:before {
+  content: "\e906";
+}
+.icon-n-ico2:before {
+  content: "\e907";
+}
+.icon-n-ico3:before {
+  content: "\e908";
+}
+.icon-n-ico4:before {
+  content: "\e909";
+}
+.icon-n-ico5:before {
+  content: "\e90a";
+}
+.icon-phone .path1:before {
+  content: "\e90b";
+  color: rgb(255, 238, 192);
+}
+.icon-phone .path2:before {
+  content: "\e90c";
+  margin-left: -0.998046875em;
+  color: rgb(255, 198, 27);
+}
+.icon-checkbox-border:before {
+  content: "\e90d";
+}
+.icon-checkbox-check:before {
+  content: "\e90e";
+}
+.icon-f-ico1:before {
+  content: "\e90f";
+}
+.icon-f-ico2:before {
+  content: "\e910";
+}

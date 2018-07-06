@@ -1,0 +1,28 @@
+.container
+	footer.main-footer
+		.main-footer__nav
+			ul.footer-nav.ns
+				li.footer-nav__item: a.footer-nav__link(href="#") О нас
+				li.footer-nav__item: a.footer-nav__link(href="#") Концепция
+				li.footer-nav__item: a.footer-nav__link(href="#") Наш парк
+				li.footer-nav__item: a.footer-nav__link(href="#") Почему мы
+				li.footer-nav__item: a.footer-nav__link(href="#") Контакты
+		.main-footer__social
+			ul.social.ns
+				li.social__item: a(href="#").social__link: i.icm.icon-twitter
+				li.social__item: a(href="#").social__link: i.icm.icon-facebook
+				li.social__item: a(href="#").social__link: i.icm.icon-vk
+		.main-footer__copyright © 2017. Все права защищены    |    <a href="#">Политика конфиденциальности</a>
+.modals
+	.form#modalFeedback
+		.text-section-header.ta-center
+			| Обратный звонок
+			.text-section-header__desc Заполните форму
+		input(type="text" placeholder="Меня зовут...").form-el.form-el-input
+		input(type="text" placeholder="Мой телефон...").form-el.form-el-input
+		input(type="submit" value="Заказать звонок").form-el.form-el-submit
+		.form-el-agree.align-items-center
+			label.form-el-checkbox
+				input(type="checkbox" name="agree")
+				.form-el-checkbox__ico
+			.form-el-agree__text Я согласен(а) на обработку <a href="#">персональных данных</a>

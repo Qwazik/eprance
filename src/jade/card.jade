@@ -1,0 +1,66 @@
+extends _template
+
+block main
+	.container
+		.inner-header(style="background-image: url('img/card-bg.jpg')")
+			.inner-header__title ЗАнятия танцами
+			ul.breadcrumbs 
+				li.breadcrumbs__item: a(href="#") главная
+				li.breadcrumbs__item.active: a(href="#") услуги
+				li.breadcrumbs__item.active: a(href="#") Танцы
+		.text-section.page-card
+			.text-section-header
+				| Занятие танцами для вашего ребенка
+				.text-section-header__desc 500 рублей  в  час
+			.text-section-text
+				p В этот раз все было иначе. Огнетушитель остался, и записки белели на всех доступных и недоступных поверхностях, но в обстановке кабинета что-то изменилось. Что-то, не связанное с мебелью и с исчезнувшей куклой. Акула сидел под огнетушителем и копался в бумагах. Сухой, пятнистый и мохнатый, как поросший лишайником пень. Брови, тоже пятнистые, серые и мохнатые, свисали на глаза грязными сосульками. Перед ним была папка.
+				p В этот раз все было иначе. Огнетушитель остался, и записки белели на всех доступных и недоступных поверхностях, но в обстановке кабинета что-то изменилось. Что-то, не связанное с мебелью и с исчезнувшей куклой. 
+			.photo-carousel.photo-carousel--green.mb-lg
+				.photo-carousel__list.owl-carousel
+					-for(i=0;i<10;i++)
+						.photo-carousel__item
+							img(src="img/photo.jpg", alt="")
+			.ta-center
+				a(href="#").btn.btn--lg.btn--primary Записаться сейчас!
+		.home-form.text-section.text-section--green.text-section--green-reverse.mb-lg
+			.text-section-header.ta-center
+				| Подпишитесь на новости
+				.text-section-header__desc Будьте  в  курсе  всех  событий!
+			.text-section-form
+				.form
+					input(type="text" placeholder="Меня зовут...").form-el.form-el-input
+					input(type="text" placeholder="Мой E-mail...").form-el.form-el-input
+					input(type="submit" value="Подписаться на новости").form-el.form-el-submit
+					.form-el-agree.align-items-center
+						label.form-el-checkbox.form-el-checkbox--light
+							input(type="checkbox" name="agree")
+							.form-el-checkbox__ico
+						.form-el-agree__text Я согласен(а) на обработку <a href="#">персональных данных</a>
+		.home-map#homeMap
+		.home-contacts
+			.row.align-items-center
+				.col-md.col-sm-12
+					.form
+						.text-section-header.ta-center
+							| Есть вопрос?
+							.text-section-header__desc Свяжитесь  с  нами
+						input(type="text" placeholder="Меня зовут...").form-el.form-el-input
+						input(type="text" placeholder="Мой E-mail...").form-el.form-el-input
+						input(type="submit" value="Подписаться на новости").form-el.form-el-submit
+						.form-el-agree.align-items-center
+							label.form-el-checkbox
+								input(type="checkbox" name="agree")
+								.form-el-checkbox__ico
+							.form-el-agree__text Я согласен(а) на обработку <a href="#">персональных данных</a>
+				.col-sm.col-12
+					.home-contacts__row
+						img(src="img/logo.png", alt="").home-contacts__logo
+					.home-contacts__row
+						p.home-contacts__title Адрес
+						p г. Москва, ул. Уличная Площадь, 45б,<br> 789878
+					.home-contacts__row
+						p.home-contacts__title Телефон
+						p +7 903 1118010
+					.home-contacts__row
+						p.home-contacts__title E-mail
+						p info@example.com
